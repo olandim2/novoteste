@@ -1,16 +1,15 @@
 {
-  "source": ["tokens/**/*.json"],
+  "source": ["output.json"],
   "platforms": {
     "scss": {
-      "transformGroup": "scss",
-      "buildPath": "build/scss/",
+      "transformGroup": "css",
+      "buildPath": "build/css/",
       "files": [{
-        "destination": "_variables.scss",
-        "format": "scss/variables"
+        "destination": "_variables.css",
+        "format": "css/variables"
       }]
     },
     "android": {
-      "transformGroup": "android",
       "buildPath": "build/android/",
       "files": [{
         "destination": "font_dimens.xml",
